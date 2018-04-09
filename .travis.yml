@@ -3,7 +3,8 @@ sudo: required
 services:
   - docker
 
-before_install:
+install:
   - docker-compose up
 
-
+script:
+  - ./scripts/run_tests.sh
