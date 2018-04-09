@@ -3,6 +3,10 @@ version: '3'
 services:
   db:
     image: postgres
+    restart: always
+    volumes:
+      - database_volume:/var/lib/postgresql/data
+
   web:
     build: .
     command: python3 manage.py runserver 0.0.0.0:8000
@@ -13,3 +17,5 @@ services:
     depends_on:
       - db
 
+volumes:
+  database_volume:
