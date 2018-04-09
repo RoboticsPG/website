@@ -13,7 +13,7 @@ Install the following:
 To run the project:
 
 ```bash
-docker-compose up
+./scripts/start.sh
 ```
 
 Django will be hosted on `localhost:8000`.
@@ -22,26 +22,24 @@ Django will be hosted on `localhost:8000`.
 > Django, see
 > [here](https://docs.djangoproject.com/en/1.11/ref/settings/#allowed-hosts)
 
-## Docker Compose commands
+## Commands
 
 Start the dev environment
 ```bash
-docker-compose up -d
+./scripts/start.sh
 ```
 
-Stop the dev environment
+Stops the dev environment
 ```bash
-docker-compose down
+./scripts/stop.sh
 ```
 
-Delete the dev environment, including the database
+Starts a bash shell
 ```bash
-docker-compose down --volumes
+./scripts/shell.sh
 ```
 
-Shelling into a container
+Runs the unit tests
 ```bash
-docker container ls
-
-docker exec -i -t  #container_id /bin/bash
+./scripts/run_tests.sh
 ```
