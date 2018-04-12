@@ -1,5 +1,8 @@
 # Created by https://www.gitignore.io
 
+# Do not allow the dotenv file
+.env
+
 ### OSX ###
 .DS_Store
 .AppleDouble
