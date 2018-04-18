@@ -1,5 +1,6 @@
 from django.test import TestCase
 
+
 class TestTest(TestCase):
     def test_fails(self):
         """This test should fail"""

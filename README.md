@@ -48,3 +48,8 @@ Runs the unit tests
 ```bash
 ./scripts/run_tests.sh
 ```
+
+Linting (Please run before committing/merging with master)
+```bash
+./scripts/lint.sh
+```
