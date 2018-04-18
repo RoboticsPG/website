@@ -39,6 +39,11 @@ Starts a bash shell
 ./scripts/shell.sh
 ```
 
+Updating (After the Docker config changes)
+```bash
+./scripts/rebuild.sh
+```
+
 Runs the unit tests
 ```bash
 ./scripts/run_tests.sh
